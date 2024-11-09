@@ -29,7 +29,7 @@ struct ContentView: View {
             }
             .buttonStyle(.borderless)
             
-            Text("Set Reference Dates")
+            Text("Semester Dates")
                 .font(.headline)
             
             DatePicker(

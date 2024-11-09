@@ -66,7 +66,7 @@ class DateProvider: ObservableObject {
         let totalWeeksBetween = calendar.dateComponents([.weekOfYear], from: referenceStartDate, to: referenceEndDate).weekOfYear ?? 0
         
         DispatchQueue.main.async {
-            self.currentDateInfo = "WoY \(currentWeek)/\(totalWeeks); DoY \(currentDay)/\(totalDays); W \(weeksSinceStart)/\(totalWeeksBetween)"
+            self.currentDateInfo = "DoY \(currentDay)/\(totalDays); WoY \(currentWeek)/\(totalWeeks); SW \(weeksSinceStart+1)/\(totalWeeksBetween+1)"
         }
     }
     
